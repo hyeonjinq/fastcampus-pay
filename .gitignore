@@ -1,0 +1,30 @@
+# Build directories
+/*/build/
+build/
+.gradle/
+gradle/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+.env.local
+*.properties.local
+axon-server-se/*/*
+db/data/*
+
+# Gradle
+.gradle
+*.jar
+*.war
+*.ear
+*.class

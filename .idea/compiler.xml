@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.20/18bcea7d5df4d49227b4a0743a536208ce4825bb/lombok-1.18.20.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/2.5.2/69da26fe0e896d89feb388c425947c34416fde2e/spring-boot-configuration-processor-2.5.2.jar" />
+        </processorPath>
+        <module name="study.fastcampus-pay.utility.main" />
+        <module name="com.fastcampuspay.settlement.fastcampus-pay.settlement-service.main" />
+        <module name="com.fastcampus.task-consumer.fastcampus-pay.task-consumer.main" />
+        <module name="com.fastcampuspay.membership.fastcampus-pay.membership-service.main" />
+        <module name="study.fastcampus-pay.money-aggregation-service.main" />
+        <module name="com.fastcampuspay.money.fastcampus-pay.money-service.main" />
+        <module name="study.fastcampus-pay.money-query-service.main" />
+        <module name="com.fastcampuspay.payment.fastcampus-pay.payment-service.main" />
+        <module name="com.fastcampuspay.banking.fastcampus-pay.banking-service.main" />
+        <module name="com.fastcampus.logging-consumer.fastcampus-pay.logging-consumer.main" />
+        <module name="study.fastcampus-pay.common.main" />
+        <module name="com.fastcampuspay.remittance.fastcampus-pay.remittance-service.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com.fastcampus.logging-consumer.fastcampus-pay.logging-consumer.main" options="-parameters" />
+      <module name="com.fastcampus.task-consumer.fastcampus-pay.task-consumer.main" options="-parameters" />
+      <module name="com.fastcampuspay.banking.fastcampus-pay.banking-service.main" options="-parameters" />
+      <module name="com.fastcampuspay.membership.fastcampus-pay.membership-service.main" options="-parameters" />
+      <module name="com.fastcampuspay.money.fastcampus-pay.money-service.main" options="-parameters" />
+      <module name="com.fastcampuspay.payment.fastcampus-pay.payment-service.main" options="-parameters" />
+      <module name="com.fastcampuspay.remittance.fastcampus-pay.remittance-service.main" options="-parameters" />
+      <module name="com.fastcampuspay.settlement.fastcampus-pay.settlement-service.main" options="-parameters" />
+      <module name="fastcampus-pay" options="-parameters" />
+      <module name="fastcampus-pay.banking-service" options="-parameters" />
+      <module name="fastcampus-pay.banking-service.test" options="-parameters" />
+      <module name="fastcampus-pay.common" options="-parameters" />
+      <module name="fastcampus-pay.common.test" options="-parameters" />
+      <module name="fastcampus-pay.logging-consumer" options="-parameters" />
+      <module name="fastcampus-pay.logging-consumer.test" options="-parameters" />
+      <module name="fastcampus-pay.main" options="-parameters" />
+      <module name="fastcampus-pay.membership-service" options="-parameters" />
+      <module name="fastcampus-pay.membership-service.test" options="-parameters" />
+      <module name="fastcampus-pay.money-aggregation-service" options="-parameters" />
+      <module name="fastcampus-pay.money-aggregation-service.test" options="-parameters" />
+      <module name="fastcampus-pay.money-query-service" options="-parameters" />
+      <module name="fastcampus-pay.money-query-service.test" options="-parameters" />
+      <module name="fastcampus-pay.money-service" options="-parameters" />
+      <module name="fastcampus-pay.money-service.test" options="-parameters" />
+      <module name="fastcampus-pay.payment-service" options="-parameters" />
+      <module name="fastcampus-pay.payment-service.test" options="-parameters" />
+      <module name="fastcampus-pay.remittance-service" options="-parameters" />
+      <module name="fastcampus-pay.remittance-service.test" options="-parameters" />
+      <module name="fastcampus-pay.settlement-service" options="-parameters" />
+      <module name="fastcampus-pay.settlement-service.test" options="-parameters" />
+      <module name="fastcampus-pay.task-consumer" options="-parameters" />
+      <module name="fastcampus-pay.task-consumer.test" options="-parameters" />
+      <module name="fastcampus-pay.test" options="-parameters" />
+      <module name="fastcampus-pay.utility" options="-parameters" />
+      <module name="fastcampus-pay.utility.test" options="-parameters" />
+      <module name="study.fastcampus-pay.common.main" options="-parameters" />
+      <module name="study.fastcampus-pay.money-aggregation-service.main" options="-parameters" />
+      <module name="study.fastcampus-pay.money-query-service.main" options="-parameters" />
+      <module name="study.fastcampus-pay.utility.main" options="-parameters" />
+    </option>
+  </component>
+</project>

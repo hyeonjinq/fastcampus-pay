@@ -1,0 +1,22 @@
+dependencies {
+
+    runtimeOnly 'mysql:mysql-connector-java'
+    implementation 'org.json:json:20200518'
+}
+
+// Explicitly disable all boot-related tasks
+bootRun {
+    enabled = false
+}
+
+bootJar {
+    enabled = false
+}
+
+bootBuildImage {
+    enabled = false
+}
+
+// Disable bootJarMainClassName task
+tasks.named('bootJarMainClassName').configure { enabled = false }
+

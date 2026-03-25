@@ -1,0 +1,76 @@
+buildscript {
+    dependencies {
+        classpath "io.spring.gradle:dependency-management-plugin:0.5.1.RELEASE"
+    }
+}
+
+plugins {
+    id 'org.springframework.boot' version '2.5.2'
+    id 'java'
+}
+
+// Disable bootJar for root project
+bootRun {
+    enabled = false
+}
+bootJar {
+    enabled = false
+}
+bootBuildImage {
+    enabled = false
+}
+
+subprojects {
+    compileJava {
+        sourceCompatibility = 11
+        targetCompatibility = 11
+    }
+    apply plugin: 'java'
+    apply plugin: 'java-library'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compileOnly 'org.projectlombok:lombok'
+        annotationProcessor 'org.projectlombok:lombok'
+        annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+        implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+        implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+        testImplementation 'com.tngtech.archunit:archunit:1.0.1'
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+        implementation 'org.springframework.boot:spring-boot-starter-aop'
+        implementation 'org.springframework.kafka:spring-kafka'
+    }
+    
+    // Disable bootJar by default for library modules
+    bootRun {
+        enabled = false
+    }
+    bootJar {
+        enabled = false
+    }
+    bootBuildImage {
+        enabled = false
+    }
+    
+    // Disable test task by default to skip tests during build
+    test {
+        enabled = false
+    }
+}
+
+// Enable bootJar for service and consumer modules (exclude utility and common)
+configure(subprojects.findAll { (it.name.contains('service') || it.name.contains('consumer')) && !it.name.contains('utility') && !it.name.contains('common') }) {
+    bootJar {
+        enabled = true
+    }
+    bootBuildImage {
+        enabled = true
+    }
+}
+
