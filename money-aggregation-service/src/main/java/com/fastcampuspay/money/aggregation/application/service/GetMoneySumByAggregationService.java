@@ -28,14 +28,20 @@ public class GetMoneySumByAggregationService implements GetMoneySumByAddressUseC
         List<String> membershipIds = getMembershipPort.getMembershipByAddress(targetAddress);
 
         List<List<String>> membershipPartitionList = null;
-        if (membershipIds.size() > 100) {
-            membershipPartitionList = partitionList(membershipIds, 100);
-        }
 
         int sum = 0;
-        for (List<String> partitionedList : membershipPartitionList) {
-            // 100 개씩 요청해서, 값을 계산하기로 설계.
-            List<MemberMoney> memberMoneyList = getMoneySumPort.getMoneySumByMembershipIds(partitionedList);
+        if (membershipIds.size() > 100) {
+            membershipPartitionList = partitionList(membershipIds, 100);
+            for (List<String> partitionedList : membershipPartitionList) {
+                // 100 개씩 요청해서, 값을 계산하기로 설계.
+                List<MemberMoney> memberMoneyList = getMoneySumPort.getMoneySumByMembershipIds(partitionedList);
+
+                for (MemberMoney memberMoney : memberMoneyList) {
+                    sum += memberMoney.getBalance();
+                }
+            }
+        } else {
+            List<MemberMoney> memberMoneyList = getMoneySumPort.getMoneySumByMembershipIds(membershipIds);
 
             for (MemberMoney memberMoney : memberMoneyList) {
                 sum += memberMoney.getBalance();

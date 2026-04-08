@@ -85,12 +85,13 @@ public class RemittanceRequest { // 송금 요청에 대한 상태 클래스.
             RemittanceRequest.RemittanceStatus remittanceRequestStatus
     ){
         return new RemittanceRequest(
-            remittanceRequestId.remittanceRequestId,
-            remittanceFromMembershipId.remittanceFromMembershipId,
-            toBankName.toBankName,
-            toBankAccountNumber.toBankAccountNumber,
-            remittanceType.remittanceType,
-            amount.amount, remittanceRequestStatus.remittanceStatus
+                remittanceRequestId.remittanceRequestId,
+                remittanceFromMembershipId.remittanceFromMembershipId,
+                toBankName.toBankName,
+                toBankAccountNumber.toBankAccountNumber,
+                remittanceType.remittanceType,
+                amount.amount,
+                remittanceRequestStatus.remittanceStatus
         );
     }
 

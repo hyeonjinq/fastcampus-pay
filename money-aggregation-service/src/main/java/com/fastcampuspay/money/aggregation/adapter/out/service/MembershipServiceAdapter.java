@@ -33,11 +33,10 @@ public class MembershipServiceAdapter implements GetMembershipPort {
 
             ObjectMapper mapper = new ObjectMapper();
             List<Membership> membershipList = mapper.readValue(jsonResponse, new TypeReference<>() {});
-            List<String> membershipIds = membershipList.stream()
+
+            return membershipList.stream()
                     .map(Membership::getMembershipId)
                     .collect(Collectors.toList());
-
-            return membershipIds;
 
         } catch (Exception e) {
             throw new RuntimeException(e);

@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/logging-consumer/com.fastcampus.logging-consumer.fastcampus-pay.logging-consumer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/logging-consumer/com.fastcampus.logging-consumer.fastcampus-pay.logging-consumer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-consumer/com.fastcampus.task-consumer.fastcampus-pay.task-consumer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/task-consumer/com.fastcampus.task-consumer.fastcampus-pay.task-consumer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/banking-service/com.fastcampuspay.banking.fastcampus-pay.banking-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/banking-service/com.fastcampuspay.banking.fastcampus-pay.banking-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/com.fastcampuspay.common.fastcampus-pay.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/com.fastcampuspay.common.fastcampus-pay.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/membership-service/com.fastcampuspay.membership.fastcampus-pay.membership-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/membership-service/com.fastcampuspay.membership.fastcampus-pay.membership-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/money-query-service/com.fastcampuspay.money-query.fastcampus-pay.money-query-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/money-query-service/com.fastcampuspay.money-query.fastcampus-pay.money-query-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/money-aggregation-service/com.fastcampuspay.money.aggregation.fastcampus-pay.money-aggregation-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/money-aggregation-service/com.fastcampuspay.money.aggregation.fastcampus-pay.money-aggregation-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/money-service/com.fastcampuspay.money.fastcampus-pay.money-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/money-service/com.fastcampuspay.money.fastcampus-pay.money-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/payment-service/com.fastcampuspay.payment.fastcampus-pay.payment-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/payment-service/com.fastcampuspay.payment.fastcampus-pay.payment-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/remittance-service/com.fastcampuspay.remittance.fastcampus-pay.remittance-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/remittance-service/com.fastcampuspay.remittance.fastcampus-pay.remittance-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/banking-service/fastcampus-pay.banking-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/banking-service/fastcampus-pay.banking-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/fastcampus-pay.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/fastcampus-pay.common.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/logging-consumer/fastcampus-pay.logging-consumer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/logging-consumer/fastcampus-pay.logging-consumer.main.iml" />
@@ -14,8 +21,13 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/money-service/fastcampus-pay.money-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/money-service/fastcampus-pay.money-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/payment-service/fastcampus-pay.payment-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/payment-service/fastcampus-pay.payment-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/remittance-service/fastcampus-pay.remittance-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/remittance-service/fastcampus-pay.remittance-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/settlement-service/fastcampus-pay.settlement-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/settlement-service/fastcampus-pay.settlement-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-consumer/fastcampus-pay.task-consumer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/task-consumer/fastcampus-pay.task-consumer.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/utility/fastcampus-pay.utility.main.iml" filepath="$PROJECT_DIR$/.idea/modules/utility/fastcampus-pay.utility.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/study.fastcampus-pay.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/study.fastcampus-pay.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/money-aggregation-service/study.fastcampus-pay.money-aggregation-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/money-aggregation-service/study.fastcampus-pay.money-aggregation-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/money-query-service/study.fastcampus-pay.money-query-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/money-query-service/study.fastcampus-pay.money-query-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utility/study.fastcampus-pay.utility.main.iml" filepath="$PROJECT_DIR$/.idea/modules/utility/study.fastcampus-pay.utility.main.iml" />
     </modules>
   </component>
 </project>
